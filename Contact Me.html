@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact me</title>
+  </head>
+  <body>
+    <h1>Personal info</h1>
+    <p>📱 </p>
+    <p>📧--@gmail.com</p>
+    <hr>
+    <h4><em>Contact me</em></h4>
+    <!--new add here is the attribute at the form element of the ''enctype="text/plain" ''
+  that is in order when it goes to the email to match the <meta charset="utf-8"> by matching the ecoded type,so it won't give weird text/symbols.
+Another feature is the action (action="mailto:konsmich85@gmail.com") so when you press the submit button it directs you to the email adress you have chosen-->
+      <form  action="mailto:konsmich85@gmail.com" method="post" enctype="text/plain">
+
+        <input type="date" name="date" value=""><br>
+        <label>Full name:</label>
+        <input type="text" name="YourName" value=""><br>
+        <label>Email:</label>
+        <input type="email" name="YourEmail" value=""><br>
+        <label>Phone number:</label>
+        <input type="text" name="PhoneNumber" value=""><br>
+        <label> Tell us your reason of contact:</label><br>
+        <textarea name="YourText" rows="8" cols="50"></textarea><br>
+        <input type="radio" name="" value="">
+        <label>Potential Client</label>
+        <input type="radio" name="" value="">
+        <label>Recruiter</label><br>
+        <input type="radio" name="" value="">
+        <label>Developer Buddy</label><br>
+        <input type="reset" name="" value="Reset"><br>
+        <br>
+        <input type="submit" name="" value="Submit">
+
+      </form>
+  </body>
+</html>
